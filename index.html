@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>Github Magic</title>
     <meta charset="UTF-8" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <link rel="icon" type="image/x-icon" class="js-site-favicon" href="https://github.githubassets.com/favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
 
-  <body>
-    <div id="app" class="mt-5 ml-5">
-      <div class="user-wrapper d-flex">
-        <input type="text" class="username mr-3" placeholder="Type Your Github Username" />
-        <button class="btn btn-danger action">See Magic</button>
-      </div>
-
-      <div class="card mt-5 ml-5" style="width: 18rem;">
-        <img class="card-img-top avatar" />
-        <div class="card-body">
-          <h5 class="card-title name"></h5>
-          <h6 class="card-text bio"></h6>
-          <a class="card-link url" target="_blank">Personal Blog</a>
-          <a class="btn btn-primary repo mt-3" target="_blank">See Repository</a>
+<body>
+    <div id="app">
+        <div class="user-wrapper d-flex">
+            <input type="text" class="username mr-3" placeholder="Type Your Github Username" />
+            <button class="btn btn-danger action">See Magic</button>
         </div>
-      </div>
 
-    <script src="index.js"></script>
-  </body>
+        <div class="card mt-5">
+            <img class="card-img-top avatar" />
+            <div class="card-body">
+                <h5 class="card-title name"></h5>
+                <h6 class="card-text bio"></h6>
+                <a class="card-link url" target="_blank">Personal Blog</a>
+                <a class="btn btn-primary repo mt-3" target="_blank">See Repository</a>
+            </div>
+        </div>
+    </div>
+
+        <script src="index.js"></script>
+</body>
+
 </html>
