@@ -15,9 +15,9 @@ bodyBg.style.backgroundImage = `url('https://source.unsplash.com/random/1920x108
 // API Info
 const BASE = `https://api.github.com/users/`;
 
-action.addEventListener("click", f => {
+userName.addEventListener("keypress", e => {
     const userNameValue = userName.value;
-    if (userNameValue) {
+    if(e.which === 13 && userNameValue){
         fetch(BASE + userNameValue)
             .then(response => response.json())
             .then(data => {
@@ -33,7 +33,7 @@ action.addEventListener("click", f => {
             });
         setTimeout(f => {
             card.style.display = "block";
+            userWrap.style.display = "none";
         }, 1000);
     }
-    userWrap.style.display = "none";
 });
