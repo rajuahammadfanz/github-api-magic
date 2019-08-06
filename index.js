@@ -6,6 +6,7 @@ const userName = document.querySelector(".username"),
     repoList = document.querySelector(".repo"),
     url = document.querySelector(".url"),
     name = document.querySelector(".name"),
+    userWrap = docuement.querySelector(".user-wrapper"),
     bodyBg = document.querySelector("body");
 
 
@@ -34,4 +35,5 @@ action.addEventListener("click", f => {
             card.style.display = "block";
         }, 1000);
     }
+    userWrap.style.display = "none";
 });
