@@ -6,7 +6,7 @@ const userName = document.querySelector(".username"),
     repoList = document.querySelector(".repo"),
     url = document.querySelector(".url"),
     name = document.querySelector(".name"),
-    userWrap = docuement.querySelector(".user-wrapper"),
+    userWrap = document.querySelector(".user-wrapper"),
     bodyBg = document.querySelector("body");
 
 
